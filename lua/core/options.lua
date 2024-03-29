@@ -13,6 +13,7 @@ vim.opt.encoding = "utf-8"
 vim.opt.background = "dark"
 vim.opt.clipboard:append 'unnamedplus'
 vim.opt.background = 'dark'
+vim.opt.termguicolors = true
 
 vim.cmd [[
     syntax on
@@ -24,7 +25,6 @@ vim.cmd [[
     set nowrap
     set noundofile
     set cindent
-    set termguicolors
     aunmenu PopUp.How-to\ disable\ mouse
     aunmenu PopUp.-1-
 ]]

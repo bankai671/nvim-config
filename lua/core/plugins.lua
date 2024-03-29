@@ -2,7 +2,7 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
--- color theme
+-- color schemes
 Plug('https://github.com/ellisonleao/gruvbox.nvim')
 
 -- file manager
