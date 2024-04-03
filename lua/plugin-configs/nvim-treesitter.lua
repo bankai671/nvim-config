@@ -21,7 +21,7 @@ require('nvim-treesitter.configs').setup({
         "go",
         "haskell",
         "markdown",
-        "python"
+        "python",
     },
 
     sync_install = false,
@@ -29,5 +29,7 @@ require('nvim-treesitter.configs').setup({
 
     highlight = {
         enable = true,
+        --additional_vim_regex_highlighting = true,
     }
 })
+

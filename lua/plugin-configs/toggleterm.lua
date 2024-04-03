@@ -1,4 +1,6 @@
-require('toggleterm').setup()
+require('toggleterm').setup({
+    direction = 'horizontal'
+})
 
 function _G.set_terminal_keymaps()
   local opts = { buffer = 0 }

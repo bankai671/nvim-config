@@ -15,10 +15,10 @@ require("nvim-tree").setup({
         sorter = "case_sensitive",
     },
     view = {
+        adaptive_size = false,
         width = 40,
         signcolumn = "no",
-        preserve_window_proportions = true,
-        adaptive_size = false,
+        preserve_window_proportions = false,
         float = {
             enable = false,
         }
