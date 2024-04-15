@@ -9,6 +9,7 @@ require('nvim-treesitter.configs').setup({
         "query",
         "javascript",
         "typescript",
+        "tsx",
         "json",
         "yaml",
         "bash",
@@ -29,7 +30,6 @@ require('nvim-treesitter.configs').setup({
 
     highlight = {
         enable = true,
-        --additional_vim_regex_highlighting = true,
     }
 })
 
