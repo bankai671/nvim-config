@@ -7,5 +7,5 @@ bufferline.setup({
             bufferline.style_preset.default,
         },
         separator_style = 'thin',
-    }
+   }
 })

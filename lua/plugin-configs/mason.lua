@@ -8,6 +8,8 @@ require("mason-lspconfig").setup({
     ensure_installed = {
         "lua_ls",
         "tsserver",
-        "clangd"
+        "clangd",
+        "docker_compose_language_service",
+        "dockerls"
     }
 })

@@ -3,6 +3,8 @@ local lspconfig = require('lspconfig')
 lspconfig.lua_ls.setup({})
 lspconfig.tsserver.setup({})
 lspconfig.clangd.setup({})
+lspconfig.docker_compose_language_service.setup({})
+lspconfig.dockerls.setup({})
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 	border = "single",

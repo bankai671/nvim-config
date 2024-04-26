@@ -5,7 +5,7 @@ vim.cmd('set completeopt=menu,menuone,noselect')
 cmp.setup({
     snippet = {
         expand = function(args)
-            require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+            require('luasnip').lsp_expand(args.body)
         end,
     },
 
@@ -94,6 +94,14 @@ require('lspconfig').cssls.setup({
     capabilities = capabilities
 })
 
+require('lspconfig').docker_compose_language_service.setup({
+    capabilities = capabilities
+})
+
+require('lspconfig').dockerls.setup({
+    capabilities = capabilities
+})
+
 require('lspconfig').emmet_language_server.setup({
   filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "pug", "typescriptreact" },
   -- Read more about this options in the [vscode docs](https://code.visualstudio.com/docs/editor/emmet#_emmet-configuration).
@@ -102,7 +110,7 @@ require('lspconfig').emmet_language_server.setup({
     ---@type table<string, string>
     includeLanguages = {},
     --- @type string[]
-    excludeLanguages = {},
+    excludeLanguages = {"javascript", "tsserver"},
     --- @type string[]
     extensionsPath = {},
     --- @type table<string, any> [Emmet Docs](https://docs.emmet.io/customization/preferences/)
@@ -119,3 +127,6 @@ require('lspconfig').emmet_language_server.setup({
     variables = {},
   },
 })
+
+require('luasnip').filetype_extend("javascript", { "javascriptreact" })
+require('luasnip').filetype_extend("javascript", { "html" })

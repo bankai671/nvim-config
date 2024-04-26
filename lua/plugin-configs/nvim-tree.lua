@@ -53,9 +53,9 @@ require("nvim-tree").setup({
                 file = true,
                 folder = true,
                 folder_arrow = true,
-                git = true,
+                git = false,
                 modified = true,
-                diagnostics = false,
+                diagnostics = true,
                 bookmarks = false,
             },
         },
@@ -82,11 +82,4 @@ require("nvim-tree").setup({
     },
 
 })
-
---local api = require('nvim-tree.api')
---local Event = api.events.Event
-
---api.events.subscribe(Event.TreeClose, function()
---    print(vim.api.nvim_win_get_width(0))
---end)
 
