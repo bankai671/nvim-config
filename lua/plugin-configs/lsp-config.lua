@@ -5,6 +5,9 @@ lspconfig.tsserver.setup({})
 lspconfig.clangd.setup({})
 lspconfig.docker_compose_language_service.setup({})
 lspconfig.dockerls.setup({})
+lspconfig.html.setup({})
+lspconfig.cssls.setup({})
+lspconfig.gopls.setup({})
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 	border = "single",
