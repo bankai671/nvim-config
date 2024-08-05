@@ -8,6 +8,7 @@ lspconfig.dockerls.setup({})
 lspconfig.html.setup({})
 lspconfig.cssls.setup({})
 lspconfig.gopls.setup({})
+lspconfig.rust_analyzer.setup({})
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 	border = "single",

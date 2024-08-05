@@ -11,6 +11,7 @@ require("mason-lspconfig").setup({
         "clangd",
         "docker_compose_language_service",
         "dockerls",
-        "gopls"
+        "gopls",
+        "rust_analyzer"
     }
 })

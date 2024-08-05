@@ -15,6 +15,19 @@ vim.opt.clipboard:append 'unnamedplus'
 vim.opt.background = 'dark'
 vim.opt.termguicolors = true
 
+vim.filetype.add({
+    extension = {
+        Dockerfile = "dockerfile",
+    },
+    filename = {
+        ["Dockerfile"] = "dockerfile",
+        ["Dockerfile.*"] = "dockerfile",
+    },
+    pattern = {
+        ["Dockerfile.*"] = "dockerfile",
+    }
+})
+
 vim.cmd [[
     syntax on
     filetype indent on
