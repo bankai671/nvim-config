@@ -23,9 +23,6 @@ Plug('https://github.com/nvim-lualine/lualine.nvim')
 -- top bar
 Plug('https://github.com/akinsho/bufferline.nvim')
 
--- terminal
-Plug('https://github.com/akinsho/toggleterm.nvim', { ['tag'] = '*' })
-
 -- complation
 Plug('https://github.com/neovim/nvim-lspconfig')
 Plug('https://github.com/hrsh7th/cmp-nvim-lsp')
