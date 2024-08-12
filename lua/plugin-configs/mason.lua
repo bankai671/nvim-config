@@ -13,5 +13,5 @@ require("mason-lspconfig").setup({
         "dockerls",
         "gopls",
         "rust_analyzer"
-    }
+    },
 })

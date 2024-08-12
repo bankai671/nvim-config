@@ -108,7 +108,8 @@ require('lspconfig').gopls.setup({
 })
 
 require('lspconfig').rust_analyzer.setup({
-    capabilities = capabilities
+    capabilities = capabilities,
+    filetypes = {"rust"}
 })
 
 require('lspconfig').emmet_language_server.setup({

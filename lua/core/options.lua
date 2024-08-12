@@ -28,6 +28,12 @@ vim.filetype.add({
     }
 })
 
+vim.diagnostic.config({
+    virtual_text = false
+})
+vim.diagnostic.config({ float = { border = "single" } })
+vim.o.updatetime = 250
+
 vim.cmd [[
     syntax on
     filetype indent on
@@ -40,5 +46,10 @@ vim.cmd [[
     set cindent
     aunmenu PopUp.How-to\ disable\ mouse
     aunmenu PopUp.-1-
+    map <space>ce :lua vim.diagnostic.open_float()<CR>
+]]
+
+vim.cmd [[
+    autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})
 ]]
 
